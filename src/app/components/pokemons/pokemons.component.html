@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-6 offset-md-1">
+        <div class="card">
+          <div class="card-body">
+            <table datatable class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr style="text-align: center;">
+                  <th>Nombre del Pokemon</th>
+                  <th>Ver más detalles</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="text-align: center;" *ngFor="let pokemon of allPokemons">
+                  <td>{{pokemon.name.toUpperCase()}}</td>
+                  <td>
+                    <button class="btn btn-primary btn-sm"><i class="fa fa-search" aria-hidden="true"></i>Detalles</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 offset-md-1">
+        <div class="card">
+            <div class="card-body">
+                <p>Nombre: </p>
+                <p>Experiencia: </p>
+                <p>Altura: </p>
+                <p>Peso: </p>
+                <img >
+                <img >
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
